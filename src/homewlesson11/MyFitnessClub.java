@@ -6,7 +6,7 @@ public class MyFitnessClub {
     private int maxCustomers;
     private int currentCustomers;
     private String contacts;
-    boolean space;
+
 
     MyFitnessClub(String clName, String clAddress, int max, int curr) {
         setClubName(clName);
@@ -24,6 +24,8 @@ public class MyFitnessClub {
             }
              void setMaxCustomers (int max) {
         if (max<=1000) maxCustomers=max;
+        else {maxCustomers=1000;
+            System.out.println("Sorry, maximum capacity in all our facilities is 1000 people");}
             }
             void setCurrentCustomers (int curr){
         if (curr>0 & curr<maxCustomers )

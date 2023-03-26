@@ -10,12 +10,19 @@ public class Reception {
 
         healthlife.MyFitnessClubInfo();
         healthlife.SpaceAvailable();
-        Abonement childHalf =new Abonement(6,true);
-        Abonement adultdHalf =new Abonement(6,false);
 
 
-        System.out.println("The price of 6 months for a child is "+ childHalf.price);
-        System.out.println("The price of 6 months for an adult is "+ adultdHalf.price);
+        Client joe = new Client();
+        Abonement joe1 = new Abonement();
+        joe.setFamilyName(joe.getFamilyName());
+        joe.setName(joe.getName());
+        joe1.setAge(joe1.getAge());
+        joe1.getChild();
+        joe1.PriceCalc();
+
+
+
+
 
 
 
