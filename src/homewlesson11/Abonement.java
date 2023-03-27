@@ -1,6 +1,5 @@
 package homewlesson11;
 
-import lesson12.C;
 
 import java.util.Scanner;
 
@@ -10,13 +9,6 @@ public class Abonement {
     private boolean child;
     double price;
 
-
-//    Abonement (int length, boolean child) {
-//        this.length = length;
-//        this.child = child;
-//          if (child) price= length*600/1.5;
-//                else price=length*600;
-//            }
 
     int getAge(){
         return age;
@@ -49,7 +41,7 @@ public class Abonement {
 
         if (child) this.price=length*600/2;
         else this.price = length*600;
-        System.out.println(this.price);
+        System.out.println("The price will be " + this.price);
     }
 
 
