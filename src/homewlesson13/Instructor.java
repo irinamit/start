@@ -9,5 +9,6 @@ abstract class Instructor {
     String[] workdays = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
     abstract void InstructorInfo();
 
+
     }
 

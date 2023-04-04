@@ -3,8 +3,10 @@ package homewlesson13;
 public class Reception {
     public static void main(String[] args) {
        FitnessClub beHealthy = new FitnessClub("Be Healthy", "Dimo12", 1000, 500);
-       beHealthy.MyFitnessClubInfo();
 
+       beHealthy.MyFitnessClubInfo();
+        System.out.println("The club number is " + beHealthy.getClubName());
+        System.out.println("The maximal number of customers is " + beHealthy.getMaxCustomers());
 
 
         Premium premCard = new Premium();
@@ -23,6 +25,8 @@ public class Reception {
         Swimming swimInstructor=new Swimming();
 //        swimInstructor.InstructorInfo();
 
+Schedule.ifIsOpen();
+Schedule.showSchedule();
 
 
 

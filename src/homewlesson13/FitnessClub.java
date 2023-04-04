@@ -4,16 +4,17 @@ public class FitnessClub { private String clubName;
     private String address;
     private int maxCustomers;
     private int currentCustomers;
-    private String contacts;
 
 
-    FitnessClub(String clName, String clAddress, int max, int curr) {
-        setClubName(clName);
-        setAddress(clAddress);
-        setMaxCustomers(max);
-        setCurrentCustomers(curr);
 
+    FitnessClub(String clName, String address, int maxCustomers, int currentCustomers) {
+        this.clubName = clName;
+        this.address = address;
+        this.maxCustomers = maxCustomers;
+        this.currentCustomers=currentCustomers;
     }
+
+
     void setClubName(String clName) {
         clubName=clName;
     }
@@ -29,9 +30,27 @@ public class FitnessClub { private String clubName;
     void setCurrentCustomers (int curr){
         if (curr>0 & curr<maxCustomers )
             currentCustomers=curr;
-
-
     }
+
+
+
+    public String getClubName() {
+        return clubName;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public int getMaxCustomers() {
+        return maxCustomers;
+    }
+
+    public int getCurrentCustomers() {
+        return currentCustomers;
+    }
+
+
 
     public void MyFitnessClubInfo () {
         System.out.println("Club name is " + clubName);

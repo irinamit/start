@@ -18,5 +18,6 @@ public class Fitness extends Instructor{
         System.out.println(instructor + " working days are  " + Arrays.toString (instrWorkdays[instructor]));
     }
 
-
 }
+
+
